@@ -43,6 +43,7 @@ public class ClubConsole {
             System.out.println("Club empty");
             return;
         }
+        System.out.println(foundClubs.stream().toString());
         for (TravelClub club : foundClubs) {
             System.out.println(club.toString());
         }

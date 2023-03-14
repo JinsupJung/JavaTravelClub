@@ -1,0 +1,41 @@
+package chap04.functional;
+
+public class Customer {
+    private String id;
+    private String location;
+    private Gender gender;
+    private int age;
+
+    public Customer(String id, String location, Gender gender, int age) {
+        this.id = id;
+        this.location = location;
+        this.gender = gender;
+        this.age = age;
+    }
+
+    public String getLocation() {
+        return location;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id='" + id + '\'' +
+                ", location='" + location + '\'' +
+                ", gender=" + gender +
+                ", age=" + age +
+                '}';
+    }
+}
